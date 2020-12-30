@@ -1,0 +1,48 @@
+/********* Base Styles ******/
+*{
+	box-sizing: border-box;
+}
+
+
+h1 {
+	font-weight: bold;
+	text-align: center;
+	font-family: Comic Sans MS, Arial, cursive;
+}
+
+section {
+	background-color: gray;
+	border: 1px solid black;
+
+}
+
+div > p {
+	border: 1px solid black;
+}
+
+
+p {
+	text-align: right;	
+
+}
+
+#p1 {
+	background-color: pink;
+}
+
+#p2 {
+	background-color: maroon;
+}
+
+
+/********* Large Devices Only *******/
+@media (min-width: 1200px) {
+	.col-lg-4 {
+		float: left;
+		border: 1px solid black;
+	}
+
+	.col-lg-4 {
+		width: 33.33%;
+	}
+}
