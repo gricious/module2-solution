@@ -76,6 +76,8 @@ p {
 }
 
 
+
+/************* Mobile Devices Only **************/
 @media (max-width: 767px;) {
 	.col-mb-6 {
 		float: left;
