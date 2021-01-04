@@ -1,35 +1,46 @@
-/********* Base Styles ******/
+/**********Base Styles *****************/
 *{
 	box-sizing: border-box;
-}
 
+}
 
 h1 {
-	font-weight: bold;
-	text-align: center;
 	font-family: Comic Sans MS, Arial, cursive;
+	text-align: center;
 }
 
-
-
-
-section {
+div {
 	background-color: gray;
-	margin: 10px;	
-}
+	
 
+}
 
 p {
 	text-align: center;
-	width: 100px;
-	margin: 0px;
 	border: 1px solid black;
+	width: 100px;
 	margin-left: auto;
+	position: relative;
+	top: -27px;
+	right: -11px;
 }
 
+section {
+	margin: 10px;
+}
+
+div > section > div > div {
+	padding: 10px;
+	border: 1px solid black;	
+}
+
+div > p {
+	
+}
 
 #p1 {
 	background-color: pink;
+	
 }
 
 #p2 {
@@ -41,50 +52,54 @@ p {
 	background-color: yellow;
 }
 
-
-/********* Desktop Devices Only *******/
+/************* Desktop Devices Only ***********/
 @media (min-width: 992px) {
-	.col-dk-4 {
-		float: left;
-		margin: 10px;
-		border: 1px solid black;
-		background-color: gray;
-		padding: 20px;
+	.col-lg-3 {
+	float: left;
+	border: 1px solid black;
+	padding: 10px;
+	margin: 20px;
+	
 	}
 
-	.col-dk-4 {
-		width: 33.33%;
-	}
-}
-
-
-/*********** Tablet Devices Only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-	#section1 {
+	.col-lg-3 {
 		width: 25%		
 	}
-
-	#section2 {
-		width: 25%
-	}
-
-	#section {
-		width: 50%
-		
-	}
 }
 
 
+/********** Tablet Devices Only **************/
+@media (min-width: 768px) and (max-width: 991px) {
 
-/************* Mobile Devices Only **************/
-@media (max-width: 767px;) {
-	.col-mb-6 {
+	#section1 {
+		width: 45%;
 		float: left;
-		border: 1px solid black;
-		background-color: gray;
+
+
+		}
+
+	#section2 {
+		width: 45%;	
+		float: left;							
 	}
 
-	.col-mb-6 {
+	#section3 {	
+		float: left;
+	}
+
+	}
+
+
+/************ Mobile Devices Only *************/
+@media (max-width: 767px) {
+	.col-sm-12 {
+		float: left;
+		border: 1px solid black;
+		padding: 10px;
+		margin: 10px;
+	}
+
+	.col-sm-12 {
 		width: 100%;
 	}
 }
